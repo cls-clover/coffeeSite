@@ -1,0 +1,1071 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.burger-menu {
+  display: none;
+  height: 66px;
+  position: relative;
+  z-index: 100;
+}
+@media screen and (max-width: 860px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
+.btn {
+  margin: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 101;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn.active {
+  transform: rotate(90deg);
+}
+.btn .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin: 2px 0;
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(28, 24, 20, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.burger.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.burger ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.burger ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.burger ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Righteous", sans-serif;
+}
+.burger ul li input {
+  color: #fff;
+}
+
+.header {
+  background-color: #1C1814;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 860px) {
+  .header {
+    display: none;
+  }
+}
+.header div ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+.header div ul li:hover {
+  color: #C99E71;
+}
+.header div ul li a {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  background: url(../imgs/main-bg.png) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 66px);
+  display: flex;
+  align-items: center;
+}
+.main .container {
+  flex: 1;
+}
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1230px) {
+  .main__content {
+    box-sizing: border-box;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__content {
+    justify-content: center;
+  }
+}
+.main__btn {
+  align-self: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .main__btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__txt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main__txt h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 60px;
+  max-width: 500px;
+}
+@media screen and (max-width: 1400px) {
+  .main__txt h1 {
+    font-size: 50px;
+    max-width: 415px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .main__txt h1 {
+    font-size: 45px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__txt h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .main__txt h1 {
+    font-size: 34px;
+  }
+}
+.main__txt p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  max-width: 504px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .main__txt p {
+    font-size: 13px;
+  }
+}
+.main__txt button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #C99E71;
+  padding: 20px 40px;
+}
+@media screen and (max-width: 830px) {
+  .main__txt button {
+    padding: 15px 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__txt button {
+    align-self: flex-end;
+  }
+}
+
+.coffee-cards {
+  margin-top: 100px;
+}
+.coffee-cards__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1300px) {
+  .coffee-cards__content {
+    margin-inline: 30px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .coffee-cards__content {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  .coffee-cards__content {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .coffee-cards__content a {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .coffee-cards__content .card-invisible {
+    display: none;
+  }
+}
+.coffee-cards__content h2 {
+  font-family: "Righteous", sans-serif;
+}
+@media screen and (max-width: 1100px) {
+  .coffee-cards__content h2 {
+    font-size: 20px;
+  }
+}
+.coffee-cards__content h2 span {
+  color: #C99E71;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1100px) {
+  .coffee-cards__content img {
+    width: 90%;
+  }
+}
+
+.history {
+  margin-top: 100px;
+  scroll-margin-top: 50px;
+}
+.history__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+@media screen and (max-width: 940px) {
+  .history__content {
+    display: none;
+  }
+}
+.history__content .imgss {
+  display: flex;
+  gap: 32px;
+}
+.history__content .imgss .mini-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (max-width: 1240px) {
+  .history__content .imgss .mini-imgs {
+    display: none;
+  }
+}
+.history__content .imgss .mini-imgs img {
+  width: 298px;
+  height: 301px;
+}
+.history__content .our-history {
+  background-color: #1C1814;
+}
+.history__content .our-history div {
+  padding: 150px 56px;
+}
+@media screen and (max-width: 570px) {
+  .history__content .our-history div {
+    padding: 85px 56px;
+  }
+}
+.history__content .our-history div h4 {
+  margin: 0;
+  color: #C99E71;
+  font-family: "Urbanist", sans-serif;
+}
+.history__content .our-history div h1 {
+  margin-top: 15px;
+  font-size: 40px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 570px) {
+  .history__content .our-history div h1 {
+    font-size: 37px;
+  }
+}
+.history__content .our-history div p {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 200;
+  line-height: 1.7;
+  width: 382px;
+}
+
+.popular {
+  margin-top: 100px;
+}
+.popular__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
+.popular__txt h4 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  color: #C99E71;
+}
+@media screen and (max-width: 520px) {
+  .popular__txt h4 {
+    font-size: 20px;
+  }
+}
+.popular__txt h1 {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .popular__txt h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .popular__txt h1 {
+    display: none;
+  }
+}
+.popular__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+.popular__cards a {
+  background-color: #121315;
+}
+.popular__cards a div {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 650px) {
+  .popular__cards a div h3 {
+    font-size: 15px;
+  }
+}
+.popular__cards a div h2 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+@media screen and (max-width: 650px) {
+  .popular__cards a div h2 {
+    font-size: 20px;
+  }
+}
+.popular__cards a div .h2-self {
+  margin: 40px 0;
+}
+.popular__cards a div button {
+  font-family: "Urbanist", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  background-color: #C99E71;
+  padding: 10px 20px;
+}
+.popular__cards a div .stars-txt {
+  color: #C99E71;
+  text-transform: uppercase;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding-top: 39px;
+}
+.popular__cards a div .price-txt {
+  text-transform: uppercase;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+.popular__cards a div .price-txt span {
+  color: #C99E71;
+}
+@media screen and (max-width: 1170px) {
+  .popular .popular-card__invisible {
+    display: none;
+  }
+}
+@media screen and (max-width: 880px) {
+  .popular .popular-card__mar {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .popular .popular-card__invis {
+    display: none;
+  }
+}
+.popular__btn {
+  margin-top: 56px;
+}
+.popular__btn button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #C99E71;
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+
+.cofe-machine {
+  margin-top: 100px;
+}
+@media screen and (max-width: 920px) {
+  .cofe-machine {
+    display: none;
+  }
+}
+.cofe-machine__content {
+  background-color: #1C1814;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 80px 70px 100px;
+}
+@media screen and (max-width: 1160px) {
+  .cofe-machine__content {
+    padding: 60px 35px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .cofe-machine__content {
+    justify-content: space-between;
+  }
+}
+.cofe-machine__content h1 {
+  margin-top: 0;
+  font-family: "Righteous", sans-serif;
+  font-size: 40px;
+}
+.cofe-machine__content p {
+  margin-bottom: 25px;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+  font-weight: 200;
+  line-height: 1.7;
+  width: 519px;
+}
+.cofe-machine__content button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #C99E71;
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+
+.menu {
+  margin-top: 100px;
+  scroll-margin-top: 15px;
+}
+.menu__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
+.menu__txt h4 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  color: #C99E71;
+}
+.menu__txt h1 {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .menu__txt h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .menu__txt h1 {
+    display: none;
+  }
+}
+.menu__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+@media screen and (max-width: 1240px) {
+  .menu__box {
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .menu__box {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu__box {
+    grid-template-columns: 1fr;
+    margin: 0 40px;
+  }
+}
+.menu__box a {
+  border: 1.5px solid #32323D;
+  padding: 24px;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 450px) {
+  .menu__box a {
+    padding: 15px;
+  }
+}
+.menu__box a div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 450px) {
+  .menu__box a div {
+    justify-content: center;
+  }
+}
+.menu__box a div p {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu__box a div .appear {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .menu__box a div .appear {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu__box a div .appear {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu__box a div .appear {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .menu__box a div .appear {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .menu__box a div .disapp {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu__box a div .disapp {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu__box a div .disapp {
+    display: none;
+  }
+}
+.menu__box a div h3 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  color: #C99E71;
+}
+@media screen and (max-width: 450px) {
+  .menu__box a div h3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu__box .delete {
+    display: none;
+  }
+}
+
+.slider {
+  scroll-margin-top: 20px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
+.slider__txt h4 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  color: #C99E71;
+}
+.slider__txt h1 {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .slider__txt h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .slider__txt h1 {
+    display: none;
+  }
+}
+.slider .card {
+  background-color: #1C1814;
+  padding: 40px;
+}
+.slider .card__review-txt {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.slider .card__review-txt p {
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.7;
+}
+.slider .card__review-txt h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.slider .card__review-txt h4 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+.slider .card .caption {
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.swiper-inner {
+  padding-top: 35px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-inner__btns {
+  display: flex;
+  gap: 15px;
+}
+.swiper-inner__pag-scr {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+.swiper-inner .swiper-button-prev {
+  width: 56px;
+  position: static;
+  font-size: 50px;
+}
+.swiper-inner .swiper-button-prev::after {
+  content: url(../imgs/swiper-button-prev.svg);
+  position: relative;
+  top: 0;
+}
+.swiper-inner .swiper-button-next {
+  width: 56px;
+  position: static;
+}
+.swiper-inner .swiper-button-next::after {
+  content: url(../imgs/swiper-button-next.svg);
+}
+.swiper-inner .swiper-pagination {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  color: #C99E71;
+  position: static;
+  display: flex;
+  align-items: start;
+}
+.swiper-inner .swiper-pagination::after {
+  content: "People";
+  position: relative;
+  left: 4px;
+}
+.swiper-inner .swiper-scrollbar-horizontal {
+  background: rgba(201, 158, 0, 0.1);
+  position: static;
+  width: 120px;
+}
+.swiper-inner .swiper-scrollbar-drag {
+  background-color: #C99E71;
+}
+
+.reservation {
+  margin-top: 100px;
+  scroll-margin-top: 50px;
+}
+@media screen and (max-width: 700px) {
+  .reservation {
+    display: none;
+  }
+}
+.reservation__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
+.reservation__txt h4 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  color: #C99E71;
+}
+.reservation__txt h1 {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .reservation__txt h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .reservation__txt h1 {
+    display: none;
+  }
+}
+.reservation__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+@media screen and (max-width: 860px) {
+  .reservation__content {
+    grid-template-columns: 545px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 860px) {
+  .reservation__content img {
+    display: none;
+  }
+}
+.reservation__content__form .form__inner {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 70px 50px;
+  background: #1C1814;
+}
+.reservation__content__form .form__inner button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #C99E71;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  align-self: center;
+}
+.reservation__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+.reservation__inputs input {
+  color: #fff;
+  background: #14110E;
+  height: 60px;
+  font-size: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.testimonial {
+  margin-top: 100px;
+}
+@media screen and (max-width: 840px) {
+  .testimonial {
+    display: none;
+  }
+}
+.testimonial__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
+.testimonial__txt h4 {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  color: #C99E71;
+}
+.testimonial__txt h1 {
+  margin: 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .testimonial__txt h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .testimonial__txt h1 {
+    display: none;
+  }
+}
+.testimonial__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1230px) {
+  .testimonial__cards {
+    justify-content: space-evenly;
+  }
+}
+.testimonial__cards .testimonial__card {
+  background-color: #1C1814;
+}
+.testimonial__cards .testimonial__card div {
+  box-sizing: border-box;
+  padding: 24px;
+}
+.testimonial__cards .testimonial__card div dl {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Urbanist", sans-serif;
+}
+.testimonial__cards .testimonial__card div dl dd {
+  margin: 0;
+}
+.testimonial__cards .testimonial__card div dl dd span {
+  color: #C99E71;
+}
+.testimonial__cards .testimonial__card div p {
+  text-transform: capitalize;
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+}
+.testimonial__cards .testimonial__card div h5 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #C99E71;
+}
+.testimonial__cards .testimonial__card div h5::after {
+  content: url(../imgs/golden-arrow.svg);
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+@media screen and (max-width: 1230px) {
+  .testimonial__cards .testimonial-delete {
+    display: none;
+  }
+}
+
+.nav-bar {
+  margin-top: 100px;
+}
+@media screen and (max-width: 840px) {
+  .nav-bar {
+    display: none;
+  }
+}
+.nav-bar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1230px) {
+  .nav-bar nav {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-bar nav img {
+    display: none;
+  }
+}
+.nav-bar nav ul {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 1150px) {
+  .nav-bar nav ul {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-bar nav ul {
+    padding: 0;
+  }
+}
+.nav-bar nav ul li {
+  font-family: "Urbanist", sans-serif;
+}
+.nav-bar nav ul li:hover {
+  color: #C99E71;
+}
+.nav-bar nav .search-form {
+  background: #1C1814;
+  border-radius: 38px;
+  box-sizing: border-box;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar nav .search-form__txt {
+  color: #fff;
+  font-size: 16px;
+  width: 210px;
+  padding-left: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .nav-bar nav .search-form__txt {
+    width: 150px;
+  }
+}
+.nav-bar nav .search-form__btn {
+  background-color: #C99E71;
+  border-radius: 60%;
+  filter: drop-shadow(0 10px 20px #C99E71);
+}
+@media screen and (max-width: 1000px) {
+  .nav-bar nav .search-form__btn {
+    width: 40px;
+  }
+}
+.nav-bar nav .search-form__img {
+  box-sizing: border-box;
+  padding: 11px;
+  display: flex;
+}
+
+.footer {
+  margin-top: 52px;
+  background: #1C1814;
+  display: flex;
+  justify-content: center;
+}
+.footer h4 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background-color: #14110E;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

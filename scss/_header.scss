@@ -1,0 +1,30 @@
+.header {
+    background-color: #1C1814;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media screen and (max-width:860px){
+        display: none;
+    }
+
+    div {
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 0;
+
+            li {
+                &:hover {
+                    color: $accent-color;
+                }
+
+                a {
+                    font-family: "Inter", sans-serif;
+                }
+            }
+        }
+    }
+}

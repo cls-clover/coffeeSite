@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="burger-menu">
+        <div class="pozition">
+            <div>
+                <img src="./imgs/Logo.png" alt="logo">
+            </div>
+            <button class="btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="burger">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Booking a table</a></li>
+                <li><input type="text" placeholder="Search..."></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#history">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="./imgs/Logo.png" alt="logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#slider">Pages</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+
+                <li><img src="./imgs/search.svg" alt="search"></li>
+                <li><img src="./imgs/shopping-bag.svg" alt="shopping-bag"></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <div class="main__txt">
+                    <h1>Enjoy Your Morning Coffee.</h1>
+                    <p>
+                        The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to
+                        Opportunity
+                    </p>
+                    <button>Test Coffee</button>
+                </div>
+                <div class="main__btn">
+                    <img src="./imgs/play_in_main.svg" alt="#">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="coffee-cards">
+        <div class="container">
+            <div class="coffee-cards__content">
+                <a href="#">
+                    <h2><span>01</span>Best Coffee Flavour</h2>
+                    <img src="./imgs/coffee-card-01.png" alt="coffee-card-01">
+                </a>
+                <a href="#">
+                    <h2><span>02</span>Place to get lost</h2>
+                    <img src="./imgs/coffee-card-02.png" alt="coffee-card-02">
+                </a>
+                <a href="#" class="card-invisible card-invisible">
+                    <h2><span>03</span>Proper roesting</h2>
+                    <img src="./imgs/coffee-card-03.png" alt="coffee-card-03">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="history" id="history">
+        <div class="container">
+            <div class="history__content">
+                <div class="imgss">
+                    <div class="mini-imgs miniImgs-invisible">
+                        <img src="./imgs/coffee-card-02.png" alt="coffee-card-02">
+                        <img src="./imgs/coffee-card-01.png" alt="coffee-card-01">
+                    </div>
+                    <div class="big-img">
+                        <img src="./imgs/coffee-card-history.png" alt="coffee-card-history">
+                    </div>
+                </div>
+                <div class="our-history">
+                    <div>
+                        <h4>Our history</h4>
+                        <h1>Create a <br> new story with us</h1>
+                        <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a
+                            feyguat
+                            urn
+                            maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut
+                            quam
+                            quis
+                            quam venen atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular__content">
+                <div class="popular__txt">
+                    <h4>Popular Product</h4>
+                    <h1>Coffee popular Product</h1>
+                </div>
+                <div class="popular__cards">
+                    <a>
+                        <div class="popular-card__invisible">
+                            <img src="./imgs/popular-card.png" alt="coffe-bag">
+                            <h2 class="h2-self">brazil coffee gred</h2>
+                            <button> <img src="./imgs/shopping-bag.svg" alt="shopping-bag">Add to cart</button>
+                        </div>
+                    </a>
+                    <a class="popular-card__invis">
+                        <div>
+                            <img src="./imgs/popular-card.png" alt="coffe-bag">
+                            <h3 class="stars-txt">Coffee <img src="./imgs/star-group.svg" alt=""></h3>
+                            <h2>brazil coffee gred</h2>
+                            <h3 class="price-txt">Price - <span>$320.00/ </span>$358</h3>
+                        </div>
+                    </a>
+                    <a class="popular-card__mar">
+                        <div>
+                            <img src="./imgs/popular-card.png" alt="coffe-bag">
+                            <h3 class="stars-txt">Coffee <img src="./imgs/star-group.svg" alt=""></h3>
+                            <h2>brazil coffee gred</h2>
+                            <h3 class="price-txt">Price - <span>$320.00/ </span>$358</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="popular__btn">
+                    <button>View all product</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cofe-machine">
+        <div class="container">
+            <div class="cofe-machine__content">
+                <div>
+                    <img src="./imgs/cofe-machine.png" alt="coffee-machine">
+                </div>
+                <div>
+                    <h1>Coffee <br> machine, buy for home</h1>
+                    <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula
+                        volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib
+                        maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fri
+                        ngilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                    <button>Discover now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu__content">
+                <div class="menu__txt">
+                    <h4>Menu</h4>
+                    <h1>Coffee popular menu</h1>
+                </div>
+                <div class="menu__box">
+                    <a href="#">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="delete">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="delete">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="delete">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="delete">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="delete">
+                        <div>
+                            <p class="disapp"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano rosted gred</p>
+                            <p class="appear"><img src="./imgs/cup-of-coffe.png" alt="cup-of-coffe">Americano...</p>
+                            <h3>$12:00</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider" id="slider">
+        <div class="container">
+            <div class="slider__content">
+                <div class="slider__txt">
+                    <h4>Testimonial</h4>
+                    <h1>Says our customers</h1>
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__review-txt">
+                                    <img src="./imgs/swiper-img-man.png" alt="man">
+                                    <p>Education WP is a special build for effective education & Learning Management
+                                        System site. Education WP is the next generation & one of the best education
+                                        WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="card__review-txt caption">
+                                    <div>
+                                        <h3>John Smith</h3>
+                                        <h4>Product Designer</h4>
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/swiper-stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__review-txt">
+                                    <img src="./imgs/swiper-img-woman.png" alt="woman">
+                                    <p>Education WP is a special build for effective education & Learning Management
+                                        System site. Education WP is the next generation & one of the best education
+                                        WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="card__review-txt caption">
+                                    <div>
+                                        <h3>Brett Lee</h3>
+                                        <h4>User Experience Designer</h4>
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/swiper-stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__review-txt">
+                                    <img src="./imgs/swiper-img-man.png" alt="man">
+                                    <p>Education WP is a special build for effective education & Learning Management
+                                        System site. Education WP is the next generation & one of the best education
+                                        WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="card__review-txt caption">
+                                    <div>
+                                        <h3>John Smith</h3>
+                                        <h4>Product Designer</h4>
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/swiper-stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card__review-txt">
+                                    <img src="./imgs/swiper-img-woman.png" alt="woman">
+                                    <p>Education WP is a special build for effective education & Learning Management
+                                        System site. Education WP is the next generation & one of the best education
+                                        WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="card__review-txt caption">
+                                    <div>
+                                        <h3>Brett Lee</h3>
+                                        <h4>User Experience Designer</h4>
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/swiper-stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-inner">
+                        <div class="swiper-inner__pag-scr">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+
+                        <div class="swiper-inner__btns">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation__content">
+                <img src="./imgs/reservation-img.png" alt="map">
+                <div class="reservation__content__form">
+                    <div class="form__inner">
+                        <div class="reservation__txt">
+                            <h4>Reservation</h4>
+                            <h1>Booking a table</h1>
+                        </div>
+                        <div class="reservation__inputs">
+                            <input type="text" name="name" placeholder="4 person" required>
+                            <input type="date" name="name" placeholder="12.25, 2020" required>
+                            <input type="time" name="name" placeholder="11:00 AM" required>
+                        </div>
+                        <button>BOOK A TABLE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial__content">
+                <div class="testimonial__txt">
+                    <h4>Testimonial</h4>
+                    <h1>Our latest news</h1>
+                </div>
+
+                <div class="testimonial__cards">
+                    <div class="testimonial__card">
+                        <img src="./imgs/testimonial-img-one.png" alt="coffee-card">
+                        <div>
+                            <dl>
+                                <dd> <span>By:</span> rasaline</dd>
+                                <dt>23.01.2021</dt>
+                            </dl>
+                            <p>Ideal cocktails from barmen....</p>
+                            <h5>Read More</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial__card testimonial-delete-too">
+                        <img src="./imgs/testimonial-img-two.png" alt="coffee-card">
+                        <div>
+                            <dl>
+                                <dd> <span>By:</span> rasaline</dd>
+                                <dt>23.01.2021</dt>
+                            </dl>
+                            <p>Ideal cocktails from barmen....</p>
+                            <h5>Read More</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial__card testimonial-delete">
+                        <img src="./imgs/testimonial-img-three.png" alt="coffee-card">
+                        <div>
+                            <dl>
+                                <dd> <span>By:</span> rasaline</dd>
+                                <dt>23.01.2021</dt>
+                            </dl>
+                            <p>Ideal cocktails from barmen....</p>
+                            <h5>Read More</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nav-bar">
+        <div class="container">
+            <div class="nav-bar__content">
+                <nav>
+                    <div class="img-delete">
+                        <img src="./imgs/Logo.png" alt="logo">
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+
+                    <div class="search-form">
+                        <input type="text" class="search-form__txt" placeholder="Enter your email">
+                        <button class="search-form__btn"><img src="./imgs/white-arrow.svg" alt="search" class="search-form__img"></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>e-Tennis © 2021. All rights reserved.</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/burger-menu.js"></script>
+</body>
+
+</html>

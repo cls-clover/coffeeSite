@@ -1,0 +1,65 @@
+.swiper-inner {
+    padding-top: 35px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__btns {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__pag-scr {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .swiper-button-prev {
+        width: 56px;
+        position: static;
+        font-size: 50px;
+
+        &::after {
+            content: url(../imgs/swiper-button-prev.svg);
+            position: relative;
+            top: 0;
+        }
+    }
+
+    .swiper-button-next {
+        width: 56px;
+        position: static;
+
+        &::after {
+            content: url(../imgs/swiper-button-next.svg);
+        }
+    }
+
+    .swiper-pagination {
+        font-family: "Urbanist", sans-serif;
+        font-weight: 600;
+        color: #C99E71;
+        position: static;
+        display: flex;
+        align-items: start;
+
+        &::after {
+            content: 'People';
+            position: relative;
+            left: 4px;
+        }
+    }
+
+    .swiper-scrollbar-horizontal {
+        background: rgba(201,158,0,.1);
+        position: static;
+        width: 120px;
+    }
+
+    .swiper-scrollbar-drag {
+        background-color: #C99E71;
+    }
+}

@@ -1,0 +1,73 @@
+.reservation {
+    margin-top: 100px;
+    scroll-margin-top: 50px;
+
+    @media screen and (max-width:700px) {
+        display: none;
+    }
+
+    &__txt {
+        @include txt-style-use;
+
+        h4 {
+            @include h4-style-use;
+        }
+
+        h1 {
+            @include h1-style-use;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        
+        @media screen and (max-width:860px) {
+            grid-template-columns: 545px;
+            justify-content: center;
+        }
+
+
+        img {
+
+            @media screen and (max-width: 860px) {
+                display: none;
+            }
+        }
+
+        &__form {
+
+            .form__inner {
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 70px 50px;
+                background: #1C1814;
+
+                button {
+                    @include btn-use;
+                    text-transform: uppercase;
+                    padding: 20px 30px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+
+        input {
+            color: #fff;
+            background: #14110E;
+            height: 60px;
+            font-size: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    }
+}

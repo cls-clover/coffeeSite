@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import './scss/base';
+@import './scss/vars';
+
+@import './scss/burger-menu';
+
+@import './scss/header';
+@import './scss/main';
+@import './scss/coffee-cards';
+@import './scss/history';
+@import './scss/popular';
+@import './scss/cofe-machine';
+@import './scss/menu';
+
+@import './scss/slider';
+@import './scss/swiper';
+
+@import './scss/reservation';
+@import './scss/testimonial';
+@import './scss/nav-bar';
+@import './scss/footer';
+
+body {
+    background-color: #14110E;
+    color: #fff;
+}

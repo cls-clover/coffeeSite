@@ -1,0 +1,138 @@
+.menu {
+    margin-top: 100px;
+    scroll-margin-top: 15px;
+
+    &__txt {
+        @include txt-style-use;
+
+        h4 {
+            @include h4-style-use;
+        }
+
+        h1 {
+            @include h1-style-use;
+        }
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+
+        @media screen and (max-width:1240px) {
+            grid-template-columns: repeat(2, 500px);
+            justify-content: center;
+        }
+
+        @media screen and (max-width:1120px) {
+            grid-template-columns: repeat(2, 400px);
+        }
+        @media screen and (max-width:900px) {
+            grid-template-columns: 1fr;
+
+            margin: 0 40px;
+        }
+
+        a {
+            border: 1.5px solid #32323D;
+            padding: 24px;
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 36px;
+
+            @media screen and (max-width:450px) {
+                padding: 15px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media screen and (max-width:450px) {
+                    justify-content: center;
+                }
+
+
+                p {
+                    margin: 0;
+                    font-family: "Righteous", sans-serif;
+
+                    font: {
+                        size: 24px;
+                        weight: 500;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .appear {
+                    display: none;
+
+                    @media screen and (max-width:1240px) {
+                        display: block;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    @media screen and (max-width:900px) {
+                        display: none;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        display: block;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    @media screen and (max-width:370px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .disapp {
+
+                    @media screen and (max-width:1240px) {
+                        display: none;
+                    }
+
+                    @media screen and (max-width:900px) {
+                        display: block;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        display: none;
+                    }
+                }
+
+                h3 {
+                    margin: 0;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 500;
+                    color: $accent-color;
+
+                    @media screen and (max-width:450px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .delete {
+
+            @media screen and (max-width:900px) {
+                display: none;
+            }
+        }
+    }
+}

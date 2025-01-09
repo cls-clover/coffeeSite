@@ -1,0 +1,55 @@
+.slider {
+    scroll-margin-top: 20px;
+
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__txt {
+        @include txt-style-use;
+
+        h4 {
+            @include h4-style-use;
+        }
+
+        h1 {
+            @include h1-style-use;
+        }
+    }
+
+    .card {
+        background-color: $bg-color;
+        padding: 40px;
+
+        &__review-txt {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            p {
+                font-family: "Urbanist", sans-serif;
+                line-height: 1.7;
+            }
+
+            h3 {
+                font-family: "Urbanist", sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-family: "Urbanist", sans-serif;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+        .caption {
+            margin-top: 15px;
+            justify-content: space-between;
+        }
+    }
+}

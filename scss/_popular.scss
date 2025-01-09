@@ -1,0 +1,127 @@
+.popular {
+    margin-top: 100px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__txt {
+        @include txt-style-use;
+
+        h4 {
+            @include h4-style-use;
+
+            @media screen and (max-width:520px) {
+                font-size: 20px;
+            }
+        }
+
+        h1 {
+            @include h1-style-use;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between; 
+        gap: 36px;
+
+
+        a {
+            background-color: #121315;
+
+            div {
+                padding: 48px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+
+                    @media screen and (max-width:650px) {
+                        font-size: 15px;
+                    }
+                }
+
+                h2 {
+                    font-family: "Righteous", sans-serif;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    margin: 20px 0;
+
+                    @media screen and (max-width:650px) {
+                        font-size: 20px;
+                    }
+                }
+
+                .h2-self {
+                    margin: 40px 0;
+                }
+
+                button {
+                    font-family: "Urbanist", sans-serif;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 18px;
+                    background-color: $accent-color;
+                    padding: 10px 20px;
+                }
+
+                .stars-txt {
+                    color: $accent-color;
+                    text-transform: uppercase;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin: 0;
+                    padding-top: 39px;
+
+                }
+
+                .price-txt {
+                    text-transform: uppercase;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 500;
+                    margin: 0;
+
+                    span {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 1170px) {
+        .popular-card__invisible {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .popular-card__mar {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (max-width:630px) {
+        .popular-card__invis {
+            display: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 56px;
+
+        button {
+            @include btn-use;
+            text-transform: uppercase;
+            padding: 20px 30px;
+        }
+    }
+}

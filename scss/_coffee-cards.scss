@@ -1,0 +1,53 @@
+.coffee-cards {
+    margin-top: 100px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1300px) {
+            margin-inline: 30px;
+        }
+        @media screen and (max-width: 940px) {
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: 660px) {
+            flex-wrap: wrap;
+        }
+
+        a {
+            
+            @media screen and (max-width: 1300px) {
+                width: 330px;
+            }
+        }
+
+        @media screen and (max-width: 940px) {
+            .card-invisible {
+                display: none;
+            }
+        }
+
+        h2 {
+            font-family: "Righteous", sans-serif;
+
+            @media screen and (max-width: 1100px) {
+                font-size: 20px;
+            }
+
+            span {
+                color: $accent-color;
+                padding-right: 10px;
+            }
+        }
+
+        img {
+
+            @media screen and (max-width: 1100px) {
+                width: 90%;
+            }
+        }
+    }
+}

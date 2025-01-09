@@ -1,0 +1,83 @@
+.testimonial {
+    margin-top: 100px;
+
+    @media screen and (max-width:840px) {
+        display: none;
+    }
+
+    &__txt {
+        @include txt-style-use;
+
+        h4 {
+            @include h4-style-use;
+        }
+
+        h1 {
+            @include h1-style-use;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width:1230px) {
+            justify-content: space-evenly;
+        }
+
+        .testimonial__card {
+            background-color: #1C1814;
+
+            div {
+                box-sizing: border-box;
+                padding: 24px;
+
+                dl {
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: "Urbanist", sans-serif;
+
+                    dd {
+                        margin: 0;
+
+                        span {
+                            color: $accent-color;
+                        }
+                    }
+                }
+
+                p {
+                    text-transform: capitalize;
+                    font-family: "Righteous", sans-serif;
+                    font-size: 20px;
+                }
+
+                h5 {
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    color: $accent-color;
+
+                    &::after {
+                        content: url(../imgs/golden-arrow.svg);
+                        position: relative;
+                        top: 7px;
+                        left: 5px;
+                    }
+                }
+            }
+
+        }
+
+        .testimonial-delete {
+
+            @media screen and (max-width:1230px) {
+                display: none;
+            }
+        }
+
+    }
+}

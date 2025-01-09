@@ -1,0 +1,93 @@
+.main {
+    background: url(../imgs/main-bg.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 66px);
+
+    display: flex;
+    align-items: center;
+
+    & .container {
+        flex: 1;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1230px) {
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        @media screen and (max-width:767px) {
+            justify-content: center;
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
+
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    &__txt {
+
+        @media screen and (max-width:767px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: "Righteous", sans-serif;
+            font-size: 60px;
+            // font-size: calc(30px + 50 * (100vw / 1920));
+            max-width: 500px;
+
+            @media screen and (max-width: 1400px) {
+                font-size: 50px;
+                max-width: 415px;
+            }
+            @media screen and (max-width: 865px) {
+                font-size: 45px;
+                max-width: 350px;
+            }
+            @media screen and (max-width:500px) {
+                font-size: 40px;
+            }
+            @media screen and (max-width:370px) {
+                font-size: 34px;
+            }
+        }
+
+        p {
+            font-family: "Urbanist", sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            text-transform: uppercase;
+            max-width: 504px;
+            line-height: 2;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 13px;
+            }
+        }
+
+        button {
+            @include btn-use;
+            padding: 20px 40px;
+
+            @media screen and (max-width:830px) {
+                padding: 15px 25px;
+            }
+
+            @media screen and (max-width:767px) {
+                align-self: flex-end;
+            }
+        }
+    }
+}

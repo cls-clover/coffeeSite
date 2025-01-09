@@ -1,0 +1,74 @@
+.history {
+    margin-top: 100px;
+    scroll-margin-top: 50px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+        @media screen and (max-width: 940px) {
+            display: none;
+        }
+
+        
+        .imgss {
+            display: flex;
+            gap: 32px;
+
+            .mini-imgs {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                @media screen and (max-width: 1240px) {
+                    display: none;
+                }
+    
+                img {
+                    width: 298px;
+                    height: 301px;
+                }
+            }
+        }
+    
+        .our-history {
+            background-color: #1C1814;
+    
+            div {
+                padding: 150px 56px;
+
+                @media screen and (max-width: 570px) {
+                    padding: 85px 56px;
+                }
+    
+                h4 {
+                    margin: 0;
+                    color: $accent-color;
+                    font-family: "Urbanist", sans-serif;
+                }
+        
+                h1 {
+                    margin-top: 15px;
+                    font-size: 40px;
+                    font-family: "Righteous", sans-serif;
+                    font-weight: 400;
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 37px;
+                    }
+                }
+        
+                p {
+                    margin: 0;
+                    text-transform: capitalize;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 200;
+                    line-height: 1.7;
+                    width: 382px;
+                }
+            }
+        }
+    }
+}
